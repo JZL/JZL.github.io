@@ -10,7 +10,9 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+        {% if page.url != site.baseurl %}
+        <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
+        {% endif %}
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
@@ -27,17 +29,19 @@
       {% endfor %}
 
             <hr>
-<a href="mailto:JonahLanglieb@gmail.com">
-<i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
-<br>
-<a href="https://github.com/jzl"> <i class="fa fa-github" aria-hidden="true"></i> Github</a>
-<br>
-<a href="https://www.linkedin.com/in/jonah-langlieb"> <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
-<br>
-<a href="{{site.url}}/Resume.pdf"> <i class="fa fa-file-text" aria-hidden="true"></i> Rèsumè</a>
+            <div class="noShowMobile">
+            <a href="mailto:JonahLanglieb@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i> Email</a>
+            <br>
+            <a href="https://github.com/jzl"> <i class="fa fa-github" aria-hidden="true"></i> Github</a>
+            <br>
+            <a href="https://www.linkedin.com/in/jonah-langlieb"> <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+            <br>
+            <a href="{{site.url}}/Resume.pdf"> <i class="fa fa-file-text" aria-hidden="true"></i> Rèsumè</a>
             <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
             <!-- <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a> -->
             <!-- <span class="sidebar-nav-item">Currently v{{ site.version }}</span> -->
+            </div>
     </nav>
 
     <!-- <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p> -->
