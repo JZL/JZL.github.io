@@ -1,0 +1,28 @@
+# Dependencies
+markdown:         redcarpet
+redcarpet:
+  extensions: ["tables"]
+  redcarpet:
+    extensions: ["tables"]
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Jonah Langlieb
+tagline:          'Student'
+description:      'Student, Programmer, Maker'
+# description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://jzl.github.io
+baseurl:          /
+
+author:
+  name:           'Jonah Langlieb'
+  url:            https://twitter.com/jzl
+
+  # right now not paginated
+# paginate:         5
+gems: [jekyll-paginate, jekyll-gist]
+
+# Custom vars
