@@ -7,7 +7,7 @@ Hi! My name is Jonah Langlieb and I'm a student at Swarthmore College.
 
 I like learning about technology and then using that knowledge to make new things. If you come across me, you'll probably find me scrolling through a hundred tabs or trying to remember the correct keyboard shortcut. 
 
-[Click here for a rèsumè]({{site.url}}/Resume.pdf)
+[Click here for a rèsumè]({{site.url}}/Langlieb_Resume.pdf)
 
 # Skills
 
