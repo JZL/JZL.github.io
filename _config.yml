@@ -22,6 +22,6 @@ author:
 
   # right now not paginated
 # paginate:         5
-gems: [jekyll-paginate, jekyll-gist]
+plugins: [jekyll-paginate, jekyll-gist]
 
 # Custom vars
